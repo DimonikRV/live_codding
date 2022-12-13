@@ -1,0 +1,494 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: blanchedalmond;
+    height: 100vh;
+    padding-top: 500px;
+    width: 1000px;
+    overflow: hidden;
+}
+
+.ball {
+    padding-bottom: 20px;
+    margin: 0;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 900;
+    font-size: 100px;
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    box-shadow: none;
+}
+
+.ja_cube {
+    background-color: lightcoral;
+    animation: bounce 1s linear, go_away 1s 1s linear, bang 1s 2s linear, bangbross 1s 3s linear infinite forwards;
+}
+
+.n_cube {
+    background-color: lightgreen;
+    animation: bouncen 1s 1.5s linear, go_awayn 1s 2.5s linear, bangn 1s 3.5s linear, rollsn 1.5s 4.5s linear, bangbrossn 1s 6s linear infinite;
+}
+
+.a_cube {
+    background-color: lightsalmon;
+    animation: bouncea 1s 1s linear, go_awaya 1.5s 2s linear, banga 2s 3.5s linear, rollsa 1.5s 5.5s linear, bangbrossa 1s 7s linear infinite;
+}
+
+.t_cube {
+    background-color: aqua;
+    animation: bouncet 1s 0.5s linear, go_awayt 2s 1.5s linear, bangt 1.5s 3.5s linear, rollst 0.5s 5s linear, bangbrosst 1s 5.5s linear infinite;
+}
+
+.flore {
+    width: 75%;
+    height: 10px;
+    background-color: darkgrey;
+    box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
+}
+
+@keyframes bounce {
+    0% {
+        top: 3px;
+        left: 3px;
+    }
+    25% {
+        top: 50px;
+        left: 75px;
+    }
+    50% {
+        top: 150px;
+        left: 250px;
+    }
+    75% {
+        top: 300px;
+        left: 425px;
+    }
+    100% {
+        top: 400px;
+        left: 500px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes go_away {
+    0% {
+        top: 400px;
+        left: 500px;
+    }
+    25% {
+        top: 300px;
+        left: 650px;
+    }
+    50% {
+        top: 250px;
+        left: 750px;
+    }
+    75% {
+        top: 350px;
+        left: 875px;
+    }
+    100% {
+        top: 400px;
+        left: 925px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes bang {
+    0% {
+        top: 400px;
+        left: 950px;
+    }
+    25% {
+        top: 375px;
+        left: 975px;
+    }
+    50% {
+        top: 350px;
+        left: 1000px;
+    }
+    75% {
+        top: 375px;
+        left: 1025px;
+    }
+    100% {
+        top: 400px;
+        left: 1050px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes bangbross {
+    0% {
+        top: 400px;
+        left: 1050px;
+    }
+    50% {
+        top: 350px;
+        left: 1050px;
+    }
+    100% {
+        top: 400px;
+        left: 1050px;
+        box-shadow: 11px 0px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(0);
+    }
+}
+
+
+/* =============================================================================================== */
+
+@keyframes bouncen {
+    0% {
+        top: 3px;
+        left: 3px;
+    }
+    25% {
+        top: 60px;
+        left: 65px;
+    }
+    50% {
+        top: 160px;
+        left: 240px;
+    }
+    75% {
+        top: 310px;
+        left: 415px;
+    }
+    100% {
+        top: 400px;
+        left: 490px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes go_awayn {
+    0% {
+        top: 400px;
+        left: 490px;
+    }
+    25% {
+        top: 310px;
+        left: 640px;
+    }
+    50% {
+        top: 260px;
+        left: 740px;
+    }
+    75% {
+        top: 360px;
+        left: 865px;
+    }
+    100% {
+        top: 400px;
+        left: 915px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes bangn {
+    0% {
+        top: 400px;
+        left: 940px;
+    }
+    25% {
+        top: 385px;
+        left: 965px;
+    }
+    50% {
+        top: 360px;
+        left: 990px;
+    }
+    75% {
+        top: 385px;
+        left: 1015px;
+    }
+    100% {
+        top: 400px;
+        left: 1040px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes bangbrossn {
+    0% {
+        top: 400px;
+        left: 940px;
+    }
+    50% {
+        top: 385px;
+        left: 940px;
+    }
+    100% {
+        top: 400px;
+        left: 940px;
+        box-shadow: 11px 0px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(0);
+    }
+}
+
+@keyframes rollsn {
+    0% {
+        top: 400px;
+        left: 1040px;
+        transform: rotate(0)
+    }
+    50% {
+        top: 400px;
+        left: 990px;
+        transform: rotate(45deg);
+    }
+    100% {
+        top: 400px;
+        left: 940px;
+        box-shadow: 11px 0px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(-0deg);
+    }
+}
+
+
+/* ============================================================================================== */
+
+@keyframes bouncea {
+    0% {
+        top: 3px;
+        left: 3px;
+    }
+    25% {
+        top: 70px;
+        left: 55px;
+    }
+    50% {
+        top: 220px;
+        left: 180px;
+    }
+    75% {
+        top: 370px;
+        left: 355px;
+    }
+    100% {
+        top: 400px;
+        left: 430px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes go_awaya {
+    0% {
+        top: 400px;
+        left: 430px;
+    }
+    25% {
+        top: 370px;
+        left: 580px;
+    }
+    50% {
+        top: 320px;
+        left: 680px;
+    }
+    75% {
+        top: 400px;
+        left: 805px;
+    }
+    100% {
+        top: 400px;
+        left: 855px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes banga {
+    0% {
+        top: 400px;
+        left: 880px;
+    }
+    25% {
+        top: 400px;
+        left: 905px;
+    }
+    50% {
+        top: 400px;
+        left: 930px;
+    }
+    75% {
+        top: 400px;
+        left: 955px;
+    }
+    100% {
+        top: 400px;
+        left: 980px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes bangbrossa {
+    0% {
+        top: 400px;
+        left: 850px;
+    }
+    50% {
+        top: 350px;
+        left: 850px;
+    }
+    100% {
+        top: 400px;
+        left: 850px;
+        box-shadow: 11px 0px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(0);
+    }
+}
+
+@keyframes rollsa {
+    0% {
+        top: 400px;
+        left: 980px;
+        transform: rotate(0)
+    }
+    50% {
+        top: 400px;
+        left: 930px;
+        transform: rotate(45deg);
+    }
+    100% {
+        top: 400px;
+        left: 850px;
+        box-shadow: 11px 0px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(-0deg);
+    }
+}
+
+
+/* =============================================================================================== */
+
+@keyframes bouncet {
+    0% {
+        top: 3px;
+        left: 3px;
+    }
+    25% {
+        top: 20px;
+        left: 35px;
+    }
+    50% {
+        top: 270px;
+        left: 130px;
+    }
+    75% {
+        top: 400px;
+        left: 305px;
+    }
+    100% {
+        top: 400px;
+        left: 380px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes go_awayt {
+    0% {
+        top: 400px;
+        left: 380px;
+    }
+    25% {
+        top: 380px;
+        left: 530px;
+    }
+    50% {
+        top: 380px;
+        left: 630px;
+    }
+    75% {
+        top: 400px;
+        left: 755px;
+    }
+    100% {
+        top: 400px;
+        left: 805px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes bangt {
+    0% {
+        top: 400px;
+        left: 830px;
+    }
+    25% {
+        top: 400px;
+        left: 855px;
+    }
+    50% {
+        top: 400px;
+        left: 880px;
+    }
+    75% {
+        top: 400px;
+        left: 905px;
+    }
+    100% {
+        top: 400px;
+        left: 930px;
+        box-shadow: 0px 11px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(50deg);
+    }
+}
+
+@keyframes bangbrosst {
+    0% {
+        top: 400px;
+        left: 750px;
+    }
+    50% {
+        top: 375px;
+        left: 750px;
+    }
+    100% {
+        top: 400px;
+        left: 750px;
+        box-shadow: 11px 0px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(0);
+    }
+}
+
+@keyframes rollst {
+    0% {
+        top: 400px;
+        left: 930px;
+        transform: rotate(0)
+    }
+    50% {
+        top: 400px;
+        left: 800px;
+        transform: rotate(45deg);
+    }
+    100% {
+        top: 400px;
+        left: 750px;
+        box-shadow: 11px 0px 10px -3px rgba(0, 0, 0, 0.75);
+        transform: rotate(-0deg);
+    }
+}
