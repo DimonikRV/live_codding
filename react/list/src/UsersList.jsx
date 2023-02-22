@@ -22,15 +22,16 @@ class UsersList extends React.Component {
     const { users } = this.props;
     const { curPage } = this.state;
     const itemsPerPage = 3;
+    const totalItems = users.length;
     const startIndex = curPage * itemsPerPage - itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     const nextUsersList = users.slice(startIndex, endIndex);
     return (
       <div>
         <Pagination
-          users={users}
-          nextHandler={this.goNext}
-          prevHandler={this.goPrev}
+          totalItems={totalItems}
+          goNext={this.goNext}
+          goPrev={this.goPrev}
           curPage={curPage}
           itemsPerPage={itemsPerPage}
         />
