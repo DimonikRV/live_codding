@@ -32,7 +32,7 @@ class UsersList extends React.Component {
           totalItems={totalItems}
           goNext={this.goNext}
           goPrev={this.goPrev}
-          curPage={curPage}
+          currentPage={curPage}
           itemsPerPage={itemsPerPage}
         />
         <ul className="users">
